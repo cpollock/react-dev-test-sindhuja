@@ -4,7 +4,7 @@ const Row = ({ type, value, name, selected }) => {
   const rowStyle = { border: "solid 1px" };
   if (selected) rowStyle.backgroundColor = "lightblue";
 
-  //onclick dispatch SELECT_ROW
+  //onclick dispatch SELECT_ROW with rowindex as payload
 
   return (
     <div style={rowStyle}>

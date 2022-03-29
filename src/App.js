@@ -1,24 +1,25 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-import './App.css';
-
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import Grid from "./components/DataGrid/Grid";
+import "./App.css";
 
 class ReactApp extends Component {
-  static title = 'App';
+  static title = "App";
 
   constructor() {
     super();
   }
 
-  componentDidMount() {
+  componentDidMount() {}
 
-  }
+  handleAdd = () => {};
 
   render() {
     return (
       <div>
-        REACT
+        {/* <>feed grid the gridState from redux</> */}
+        <Grid />
+        {/* <button onClick={() => handleAdd()} >Add</button> */}
       </div>
     );
   }
