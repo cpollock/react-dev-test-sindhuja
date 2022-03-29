@@ -24,6 +24,10 @@ const rowReducer = (
       updatedState[action.payload.currentSelectedIdx].selected = true;
 
       return (state = [...updatedState]);
+    case "EDIT_VALUE":
+      const temp = [...state];
+      temp[action.payload.currentSelectedIdx].value = action.payload.value;
+      return (state = [...temp]);
     default:
       return state;
   }

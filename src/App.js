@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import Grid from "./components/DataGrid/Grid";
 import "./App.css";
 
+// all logic has been included though on commented lines, as I am unaware to link from redux in react older version nor to load them.
+// still logically they should be all right.
+
 class ReactApp extends Component {
   static title = "App";
 
@@ -17,7 +20,6 @@ class ReactApp extends Component {
   render() {
     return (
       <div>
-        {/* <>feed grid the gridState from redux</> */}
         <Grid />
         {/* <button onClick={() => handleAdd()} >Add</button> */}
       </div>
